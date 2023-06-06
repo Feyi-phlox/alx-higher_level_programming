@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 if number == 0:
     last_digit = 0
 else:
-    last_digit = int(str(number)[-1])
+    last_digit = abs(number) % 10
 if number < 0:
     last_digit *= -1
 print("Last digit of {} is {} and is ".format(number, last_digit), end="")
