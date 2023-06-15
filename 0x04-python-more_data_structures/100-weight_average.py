@@ -4,9 +4,9 @@ def weight_average(my_list=[]):
         return 0
 
     total_score = 0
-    total_weight = 0
+    total_weight = 0 
 
-    for tuple in my_list:
+    for tup in my_list:
         total_score += score * weight
         total_weight += weight
 
