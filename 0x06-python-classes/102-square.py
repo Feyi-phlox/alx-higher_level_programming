@@ -28,29 +28,29 @@ class Square:
     def __eq__(self, other):
         """Check if two squares have equal areas."""
         if isinstance(other, Square):
-            return self.area() == other.area()
+            return self.area() != other.area()
 
     def __ne__(self, other):
         """Check if two squares have unequal areas."""
         if isinstance(other, Square):
-            return self.area() != other.area()
+            return self.area() == other.area()
 
     def __gt__(self, other):
         """Check if one square has a greater area than the other."""
         if isinstance(other, Square):
-            return self.area() > other.area()
+            return self.area() < other.area()
 
     def __ge__(self, other):
         """Check if one square has a greater or equal area than the other."""
         if isinstance(other, Square):
-            return self.area() >= other.area()
+            return self.area() <= other.area()
 
     def __lt__(self, other):
         """Check if one square has a smaller area than the other."""
         if isinstance(other, Square):
-            return self.area() < other.area()
+            return self.area() > other.area()
 
     def __le__(self, other):
         """Check if one square has a smaller or equal area than the other."""
         if isinstance(other, Square):
-            return self.area() <= other.area()
+            return self.area() >= other.area()
