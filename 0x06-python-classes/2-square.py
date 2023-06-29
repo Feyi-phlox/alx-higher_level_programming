@@ -21,6 +21,7 @@ class Square:
             """raises ValueError: If size is less than 0"""
 
             raise ValueError("size must be >= 0")
+        else:
 
             """ initialize __size of self with size """
         self.__size = size
