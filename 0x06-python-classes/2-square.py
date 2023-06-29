@@ -2,6 +2,7 @@
 
 """This module defines a Square class."""
 
+
 class Square:
 
     """defines function __init__"""
