@@ -4,5 +4,5 @@ class LockedClass:
 
     def __setattr__(self, name, value):
         if name != 'first_name':
-            raise AttributeError(f"new instance attribute not allowed'{name}'")
-        self.__dict__[name] = value
+            raise AttributeError("new instance attribute not allowed")
+        object.__setattr__(self, name, value)
