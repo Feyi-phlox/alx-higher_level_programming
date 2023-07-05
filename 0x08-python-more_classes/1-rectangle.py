@@ -5,10 +5,7 @@ Defines class, Rectangle
 
 
 class Rectangle:
-    """
-    Class representing a rectangle.
-    """
-
+    """Class representing a rectangle."""
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle instance.
 
