@@ -54,10 +54,10 @@ def solve_nqueens(board, col):
     Returns:
         bool: True if a solution is found, False otherwise.
     """
-    n = len(board)
+    N = len(board)
 
     # Base case: All queens are placed
-    if col >= n:
+    if col >= N:
         print_solution(board)
         return True
 
@@ -78,7 +78,7 @@ def print_solution(board):
     Args:
         board (list): The chessboard.
     """
-    n = len(board)
+    N = len(board)
     solution = []
 
     for i in range(n):
