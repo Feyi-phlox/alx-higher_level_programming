@@ -6,7 +6,6 @@ class the represents a Rectangle
 
 class Rectangle:
     """Rectangle Attributes"""
-
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle instance width and height. """
         self._width = width
@@ -14,18 +13,12 @@ class Rectangle:
 
     @property
     def width(self):
-        """
-        Get and returns the width of the rectangle
-        """
+        """Get and returns the width of the rectangle """
         return self._width
 
     @width.setter
     def width(self, value):
-        """
-        Set the width of the rectangle.
-        Args:
-            value (int): The new width value.
-        """
+        """ Set the width of the rectangle. """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
