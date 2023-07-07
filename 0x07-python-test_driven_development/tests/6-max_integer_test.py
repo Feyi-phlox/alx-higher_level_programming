@@ -30,7 +30,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_with_string(self):
         """test with string"""
         string = "Brain"
-        self.assertEqual(max_integer(string), 'r')
+       self.assertEqual(max_integer(string), 'r')
 
     def test_single_element_list(self):
         """Test a list with a single element."""
