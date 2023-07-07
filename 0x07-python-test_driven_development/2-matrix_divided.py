@@ -35,7 +35,7 @@ def matrix_divided(matrix, div):
         for element in row:
             if not isinstance(element, (int, float)):
                 raise TypeError(msg1)
-            divided_element = round(element/ div, 2)
+            divided_element = round(element / div, 2)
             divided_row.append(divided_element)
         divided_matrix.append(divided_row)
 
