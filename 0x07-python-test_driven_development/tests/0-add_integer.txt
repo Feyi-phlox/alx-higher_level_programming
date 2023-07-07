@@ -1,0 +1,50 @@
+The "0-add_integer" module
+============================
+Using "add_integer" function
+______________________________
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# checking sum of 2 integers
+>>> add_integer(2, 98)
+100
+>>> add_integer(0, 98)
+98
+>>> add_integer(0, -98)
+-98
+>>> add_integer(-98, -98)
+-196
+
+# checking for only one input
+>>> add_integer(3)
+101
+
+#checking for boolean
+>>> add_integer(True)
+99
+
+#checking for string
+>>> add_integer("goat", 7)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+# checking for float
+>>> add_integer(5.2, 2)
+7
+>>> add_integer(7.2, 6.02)
+13
+
+# checking for a list
+>>> add_integer([3, 2, 3])
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+# checking for a dictionary
+>>> add_integer({"a": 4, "b": 7})
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+# checking with None
+>>> add_integer(2, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
