@@ -11,7 +11,7 @@ Importing function matrix_mul
 
 >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
 
-passing in some matrices
+Passing in some matrices
     >>> m_a = [[1, 2], [3, 4]]
     >>> m_b = [[5, 6], [7, 8]]
     >>> matrix_mul(m_a, m_b)
