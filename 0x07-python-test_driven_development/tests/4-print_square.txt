@@ -26,3 +26,21 @@ TypeError: size must be an integer
 >>> print_square("2")
 Traceback (most recent call last):
 TypeError: size must be an integer
+
+>>> print_square(8)
+########
+########
+########
+########
+########
+########
+########
+########
+
+>>> print_square([7])
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
