@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     query = "SELECT * FROM states WHERE name LIKE BINARY '{}' \
-        ORDER BY states.id ASC".format('statenam')
+        ORDER BY states.id ASC".format(statenam)
     cur.execute(query)
 
     results = cur.fetchall()
