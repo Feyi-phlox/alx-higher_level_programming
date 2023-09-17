@@ -21,7 +21,9 @@ if __name__ == "__main__":
         sys.exit(1)
 
     cur = db.cursor()
-    query = "SELECT * FROM cities ORDER BY cities.id ASC"
+    query = "SELECT cities.id, cities.name, states.name FROM cities \
+                INNER JOIN states ON states.id = cities.state_id \
+                    ORDER BY cities.id ASC"
     cur.execute(query)
 
     results = cur.fetchall()
