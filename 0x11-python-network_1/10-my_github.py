@@ -13,15 +13,6 @@ if __name__ == "__main__":
     auth = (username, token)
 
     api_url = "https://api.github.com/user"
-
-    try:
-        response = requests.get(api_url, auth=auth)
-
-        if response.status_code == 200:
-            user_data = response.json()
-            user_id = user_data.get("id")
-            print(user_id)
-        else:
-            print(response.status_code)
-    except requests.exceptions.RequestException as e:
-        print("Error:", e)
+    response = requests.get(api_url, auth=auth).json()
+    user_id = response.get("id")
+    print(user_id)
