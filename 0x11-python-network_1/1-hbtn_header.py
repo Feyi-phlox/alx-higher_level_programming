@@ -8,5 +8,5 @@ url = sys.argv[1]
 
 if __name__ == "__main__":
     with urllib.request.urlopen(url) as response:
-        x_request_id = response.info().get("X-Request-Id")
+        x_request_id = response.get("X-Request-Id")
         print(x_request_id)
