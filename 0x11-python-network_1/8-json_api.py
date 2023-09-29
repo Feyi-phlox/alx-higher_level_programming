@@ -15,7 +15,7 @@ if __name__ == "__main__":
     data = {'q': q}
 
     try:
-        response = requests.post(url, data=data)
+        response = requests.post(url, data)
         content = response.headers.get('content-type')
 
         if content == 'application/json':
